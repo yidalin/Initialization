@@ -18,3 +18,6 @@ if [ $(whoami)=='root' ]; then
 else
     PS1="\e[0;34m\u\e[m \e[1;37min\e[m \e[0;32m\H\e[m \e[1;37mat\e[m \e[1;36m\w\e[m \e[0;34m[\t]\e[m\n\$ "
 fi
+
+HISTCONTROL=ignorespace
+HISTTIMEFORMAT=$(echo -e "\e[0;35m[%Y/%m/%d-%T]\e[m ")
